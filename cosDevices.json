@@ -1,0 +1,71 @@
+[
+  {
+    "oem": "Xiaomi",
+    "devices": [
+      {
+        "codename": "Raphael1",
+        "model": "Redmi K20 Pro1",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/1",
+        "maintainer": "Sagar Shah"
+      },
+      {
+        "codename": "Raphael2",
+        "model": "Redmi K20 Pro2",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/2",
+        "maintainer": "Sagar Shah2"
+      },
+      {
+        "codename": "Raphael3",
+        "model": "Redmi K20 Pro3",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/3",
+        "maintainer": "Sagar Shah3"
+      }
+    ]
+  },
+  {
+    "oem": "Xiaomi1",
+    "devices": [
+      {
+        "codename": "Raphael4",
+        "model": "Redmi K20 Pro4",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/4",
+        "maintainer": "Sagar Shah4"
+      },
+      {
+        "codename": "Raphael5",
+        "model": "Redmi K20 Pro5",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/5",
+        "maintainer": "Sagar Shah5"
+      },
+      {
+        "codename": "Raphael6",
+        "model": "Redmi K20 Pro6",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/6",
+        "maintainer": "Sagar Shah6"
+      }
+    ]
+  },
+  {
+    "oem": "Xiaomi2",
+    "devices": [
+      {
+        "codename": "Raphael7",
+        "model": "Redmi K20 Pro7",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/7",
+        "maintainer": "Sagar Shah7"
+      },
+      {
+        "codename": "Raphael8",
+        "model": "Redmi K20 Pro8",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/8",
+        "maintainer": "Sagar Shah8"
+      },
+      {
+        "codename": "Raphael9",
+        "model": "Redmi K20 Pro9",
+        "url": "https://sourceforge.net/projects/cosmic-os/files/raphael/9",
+        "maintainer": "Sagar Shah9"
+      }
+    ]
+  }
+]

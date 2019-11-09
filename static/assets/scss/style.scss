@@ -1,0 +1,113 @@
+
+/*
+ =========================================================
+ * Blk• Design System - v1.0.0
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/blk-design-system
+ * Copyright 2018 Creative Tim (http://www.creative-tim.com)
+
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+ // Core
+
+@import "style/custom/functions";
+@import "style/bootstrap/functions";
+
+@import "style/custom/variables";
+@import "style/bootstrap/variables";
+
+@import "style/custom/mixins";
+@import "style/bootstrap/mixins";
+
+ // Bootstrap components
+
+@import "style/bootstrap/root";
+@import "style/bootstrap/reboot";
+@import "style/bootstrap/type";
+@import "style/bootstrap/images";
+@import "style/bootstrap/code";
+@import "style/bootstrap/grid";
+@import "style/bootstrap/tables";
+@import "style/bootstrap/forms";
+@import "style/bootstrap/buttons";
+@import "style/bootstrap/transitions";
+@import "style/bootstrap/dropdown";
+@import "style/bootstrap/button-group";
+@import "style/bootstrap/input-group";
+@import "style/bootstrap/custom-forms";
+@import "style/bootstrap/nav";
+@import "style/bootstrap/navbar";
+@import "style/bootstrap/card";
+@import "style/bootstrap/breadcrumb";
+@import "style/bootstrap/pagination";
+@import "style/bootstrap/badge";
+@import "style/bootstrap/jumbotron";
+@import "style/bootstrap/alert";
+@import "style/bootstrap/progress";
+@import "style/bootstrap/media";
+@import "style/bootstrap/list-group";
+@import "style/bootstrap/close";
+@import "style/bootstrap/modal";
+@import "style/bootstrap/tooltip";
+@import "style/bootstrap/popover";
+@import "style/bootstrap/carousel";
+@import "style/bootstrap/utilities";
+@import "style/bootstrap/print";
+
+ // Custom components
+
+ @import "style/custom/alerts.scss";
+ @import "style/custom/buttons.scss";
+ @import "style/custom/dropdown.scss";
+ @import "style/custom/footer.scss";
+ @import "style/custom/forms.scss";
+ @import "style/custom/images.scss";
+ @import "style/custom/modal.scss";
+ @import "style/custom/navbar.scss";
+ @import "style/custom/type.scss";
+ @import "style/custom/icons.scss";
+ @import "style/custom/tables";
+ @import "style/custom/checkboxes-radio";
+ @import "style/custom/fixed-plugin";
+ @import "style/custom/pagination.scss";
+ @import "style/custom/misc.scss";
+ @import "style/custom/rtl.scss";
+ @import "style/custom/input-group.scss";
+ @import "style/custom/example-pages.scss";
+ @import "style/custom/progress.scss";
+ @import "style/custom/badge.scss";
+ @import "style/custom/pills.scss";
+ @import "style/custom/tabs.scss";
+ @import "style/custom/info-areas.scss";
+
+// Sections
+@import "style/custom/sections.scss";
+
+
+
+ // Vendor / Plugins
+
+@import "style/custom/vendor/plugin-perfect-scrollbar.scss";
+@import "style/custom/vendor/plugin-animate-bootstrap-notify.scss";
+@import "style/custom/vendor/plugin-bootstrap-switch.scss";
+@import "style/custom/vendor/plugin-nouislider.scss";
+@import "style/custom/vendor/plugin-datetimepicker.scss";
+
+
+// Cards
+
+@import 'style/custom/card';
+@import "style/custom/cards/card-chart";
+@import "style/custom/cards/card-map";
+@import "style/custom/cards/card-user";
+@import "style/custom/cards/card-task";
+@import "style/custom/cards/card-plain";
+@import "style/custom/cards/card-register";
+@import "style/custom/cards/card-stats";
+@import "style/custom/cards/card-chart";
