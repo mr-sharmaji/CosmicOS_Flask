@@ -4339,7 +4339,7 @@ input[type="button"].btn-block {
 }
 
 .nav-pills .nav-link {
-  border-radius: 0.25rem;
+  border-radius: 25%;
 }
 
 .nav-pills .nav-link.active,
@@ -16397,7 +16397,7 @@ textarea.form-control:active {
   position: absolute;
   transition: 0.5s ease-out;
   overflow: hidden;
-  border-radius: 20%;
+  border-radius: 100%;
 }
 
 .index-page .squares.square1 {
@@ -16406,7 +16406,7 @@ textarea.form-control:active {
   width: 300px;
   opacity: 0.5;
   left: 3%;
-  top: -21%;
+  top: -12%;
 }
 
 .index-page .squares.square2 {
@@ -16422,36 +16422,36 @@ textarea.form-control:active {
   animation: move-left-right 5s infinite;
   height: 200px;
   width: 200px;
-  opacity: 0.1;
+  opacity: 0.3;
   left: -5%;
   bottom: 0%;
 }
 
 .index-page .squares.square4 {
   animation: move-left-right 10s infinite;
-  height: 100px;
-  width: 100px;
-  opacity: 0.9;
+  height: 150px;
+  width: 150px;
+  opacity: 0.3;
   right: 27%;
   top: 70%;
 }
 
 .index-page .squares.square5 {
-  animation: move-left-right 6s infinite;
+  animation: move-left-right 3s infinite;
   height: 250px;
   width: 250px;
-  opacity: 0.1;
+  opacity: 0.2;
   left: 32%;
   bottom: 29%;
 }
 
 .index-page .squares.square6 {
-  animation: move-left-right 9s infinite;
+  animation: move-left-right 5s infinite;
   left: 10%;
   top: 35%;
-  height: 80px;
-  width: 80px;
-  opacity: 0.8;
+  height: 250px;
+  width: 250px;
+  opacity: 0.3;
 }
 
 .index-page .squares.square7 {
@@ -16460,7 +16460,7 @@ textarea.form-control:active {
   height: 300px;
   right: -5%;
   bottom: 0%;
-  opacity: 0.1;
+  opacity: 0.4;
 }
 
 .landing-page {
@@ -17118,9 +17118,9 @@ textarea.form-control:active {
 }
 
 .nav-pills .nav-item .nav-link {
-  padding: 0 15.5px;
+  /*padding: 0 15.5px;*/
   text-align: center;
-  padding: 11px 23px;
+  /*padding: 11px 23px;*/
   min-width: 100px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
