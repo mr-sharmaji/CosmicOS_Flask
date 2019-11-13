@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static',filename='assets/img/apple-icon.png') }}">
-    <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/img/favicon.png') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Secure, Stable and Feature rich Android Experience. #ExploreTheCosmos"/>
+    <meta name="keywords" content="Cosmic OS"/>
+    <meta name="author" content="Subham Sharma"/>
+    <!-- Apple iOS Safari specific config -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Chrome -->
+    <meta name="theme-color" content="#e14eca">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='assets/img/favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/img/favicon.png') }}">
     <title>
         Cosmic OS
     </title>
@@ -12,13 +20,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet"/>
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- Nucleo Icons -->
-
     <link href="{{ url_for('static',filename='assets/css/nucleo-icons.css') }}" rel="stylesheet"/>
     <!-- CSS Files -->
-
     <link href="{{ url_for('static',filename='assets/css/style.css') }}" rel="stylesheet"/>
-    {#    <!-- CSS Just for demo purpose, don't include it in your project -->#}
-    {#    <link href="./assets/demo/demo.css" rel="stylesheet"/>#}
 </head>
 <body>
 
@@ -92,36 +96,37 @@
 
 <section class="section section-lg">
     <section class="section">
-        {#        <img src="../static/assets/img/path4.png" class="path" alt="">#}
+        <img src="../static/assets/img/path4.png" class="path" alt="">
         <div class="container">
             <div class="row row-grid justify-content-between">
                 <div class="col-md-12">
                     <div class="content-center">
-                        <h1 class="display-1">Downloads</h1>
+                        <h1 class="display-2 text-white">Downloads</h1>
                         <hr class="line-primary">
                     </div>
                     <br>
 
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2 to-animate">
-                            <h3>Devices Officially supported by us.</h3>
+                        <div class="col-md-8 col-md-offset-2 to-animate mb-5">
+                            <h4 class="text-white" style="font-size: 18px">Devices Officially supported by us.</h4>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row content-center">
                 <div class="col-md-12">
-                    <ul class="nav nav-pills nav-pills-primary nav-pills-icons" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#home" role="tablist">
+                    <ul class="nav nav-pills nav-pills-primary nav-pills-icons justify-content-center" role="tablist">
+                        <li class="nav-item mr-2 mt-2">
+                            <a class="nav-link active text-white" data-toggle="tab" href="#home" role="tablist">
                                 <i class="tim-icons icon-spaceship"></i> Home
                             </a>
                         </li>
                         {% for x in api %}
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#{{ x.oem }}" role="tablist">
+                            <li class="nav-item mr-2 mt-2">
+                                <a class="nav-link text-white" data-toggle="tab" href="#{{ x.oem }}" role="tablist">
                                     <i class="tim-icons icon-mobile"></i> {{ x.oem }}
+{#                                    <i class="fas fa-mobile-alt"></i> {{ x.oem }}#}
                                 </a>
                             </li>
                         {% endfor %}
@@ -132,10 +137,12 @@
                                 <div class="card-body">
                                     <div class="tab-content tab-space">
                                         <div class="text-center square build">
-                                            <img src="{{ url_for('static', filename='assets/img/favicon.png') }}"
+                                            <img width="360px"
+                                                 src="{{ url_for('static', filename='assets/img/favicon.png') }}"
                                                  alt="">
-                                            <h3 class="title">C O S M I C - O S</h3>
-                                            <h3 class="text-center">Experience Cosmic-OS; <br> a Secure, Stable and
+                                            <h3 class="title text-white">C O S M I C - O S</h3>
+                                            <h3 class="text-center text-white" style="font-size: 20px">Experience
+                                                Cosmic-OS; <br> a Secure, Stable and
                                                 Feature rich Android
                                                 Experience.</h3>
                                             <div class="btn-wrapper">
@@ -152,6 +159,9 @@
                                                     <a href="https://twitter.com/CosmicOSProject"
                                                        class="btn btn-icon btn-twitter btn-round"><i
                                                             class="fab fa-twitter"></i></a>
+                                                    <a href="https://paypal.me/CosmicOS"
+                                                       class="btn btn-icon btn-facebook btn-round"><i
+                                                            class="fab fa-paypal"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,18 +173,19 @@
                             <div class="tab-pane" id="{{ x.oem }}">
                                 <div class="card">
                                     <div class="card-header">
-                                        <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
+                                        <ul class="nav nav-tabs nav-tabs-primary justify-content-center" role="tablist">
                                             {% for i in x.devices %}
                                                 {% if loop.index == 1 %}
-                                                    <li class="nav-item">
-                                                        <a class="nav-link active" data-toggle="tab"
+                                                    <li class="nav-item ml-2 mt-2">
+                                                        <a class="nav-link active text-white" data-toggle="tab"
                                                            href="#{{ i.codename }}" role="tablist">
                                                             {{ i.model }}
                                                         </a>
                                                     </li>
                                                 {% else %}
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="tab" href="#{{ i.codename }}"
+                                                    <li class="nav-item ml-2 mt-2">
+                                                        <a class="nav-link text-white" data-toggle="tab"
+                                                           href="#{{ i.codename }}"
                                                            role="tablist">
                                                             {{ i.model }}
                                                         </a>
@@ -188,31 +199,99 @@
                                         <div class="tab-content tab-space">
                                             {% for j in x.devices %}
                                                 {% if loop.first == True %}
-                                                    <div class="tab-pane active" id="{{ j.codename }}">
-                                                        <div class="text-center square build">
-                                                            <h6 style="font-size: 16px">Brand: {{ x.oem }} </h6>
-                                                            <h6 style="font-size: 16px">Device: {{ j.model }} </h6>
-                                                            <h6 style="font-size: 16px">
-                                                                Codename: {{ j.codename }}</h6>
-                                                            <h6 style="font-size: 16px">
-                                                                Maintainer: {{ j.maintainer }}</h6>
-                                                            <a class="btn btn-round btn-primary" href="{{ j.url }}">
-                                                                DOWNLOAD
-                                                            </a>
+                                                    <div class="text-center tab-pane active" id="{{ j.codename }}">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <div class="info info-hover">
+                                                                        <div class="icon icon-primary">
+                                                                            <i class="tim-icons icon-mobile"></i>
+                                                                        </div>
+                                                                        <h4 class="info-title text-white">Device</h4>
+                                                                        <p class="description text-white">{{ j.model }}</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="info info-hover">
+                                                                        <div class="icon icon-info">
+                                                                            <i class="fas fa-code"></i>
+                                                                        </div>
+                                                                        <h4 class="info-title text-white">Code Name</h4>
+                                                                        <p class="description text-white">{{ j.codename }}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="info info-hover">
+                                                                        <div class="icon icon-warning">
+                                                                            <i class="tim-icons icon-single-02"></i>
+                                                                        </div>
+                                                                        <h4 class="info-title text-white">
+                                                                            Maintainer</h4>
+                                                                        <p class="description text-white">{{ j.maintainer }}</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="info info-hover">
+                                                                        <div class="icon icon-success">
+                                                                            <i class="fas fa-download"></i>
+                                                                        </div>
+                                                                        <p class="description mt-5 text-white"><a
+                                                                                class="btn btn-round btn-primary"
+                                                                                href="{{ j.url }}">
+                                                                            DOWNLOAD
+                                                                        </a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 {% else %}
-                                                    <div class="tab-pane" id="{{ j.codename }}">
-                                                        <div class="text-center square build">
-                                                            <h6 style="font-size: 16px">Brand: {{ x.oem }} </h6>
-                                                            <h6 style="font-size: 16px">Device: {{ j.model }}</h6>
-                                                            <h6 style="font-size: 16px">
-                                                                Codename: {{ j.codename }}</h6>
-                                                            <h6 style="font-size: 16px">
-                                                                Maintainer: {{ j.maintainer }}</h6>
-                                                            <a class="btn btn-round btn-primary" href="{{ j.url }}">
-                                                                DOWNLOAD
-                                                            </a>
+                                                    <div class="text-center tab-pane" id="{{ j.codename }}">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <div class="info info-hover">
+                                                                        <div class="icon icon-primary">
+                                                                            <i class="tim-icons icon-mobile"></i>
+                                                                        </div>
+                                                                        <h4 class="info-title text-white">Device</h4>
+                                                                        <p class="description text-white">{{ j.model }}</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="info info-hover">
+                                                                        <div class="icon icon-info">
+                                                                            <i class="fas fa-code"></i>
+                                                                        </div>
+                                                                        <h4 class="info-title text-white">Code Name</h4>
+                                                                        <p class="description text-white">{{ j.codename }}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="info info-hover">
+                                                                        <div class="icon icon-warning">
+                                                                            <i class="tim-icons icon-single-02"></i>
+                                                                        </div>
+                                                                        <h4 class="info-title text-white">
+                                                                            Maintainer</h4>
+                                                                        <p class="description text-white">{{ j.maintainer }}</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="info info-hover">
+                                                                        <div class="icon icon-success">
+                                                                            <i class="fas fa-download"></i>
+                                                                        </div>
+                                                                        <p class="description mt-5 text-white"><a
+                                                                                class="btn btn-round btn-primary"
+                                                                                href="{{ j.url }}">
+                                                                            DOWNLOAD
+                                                                        </a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 {% endif %}
@@ -236,7 +315,7 @@
                 <a href="{{ url_for('privacy_policy') }}" class="btn btn-round btn-primary">Privacy Policy</a>
             </div>
             <div class="col-md-12 footer-copyright text-center py-3">
-                <h6 style="font-size: 16px">COPYRIGHT © 2019 THE COSMIC-OS PROJECT. ALL RIGHTS
+                <h6 style="font-size: 14px">COPYRIGHT © 2019 THE COSMIC-OS PROJECT. ALL RIGHTS
                     RESERVED</h6>
             </div>
         </div>

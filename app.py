@@ -17,7 +17,6 @@ def download():
     # with open("cosDevices.json") as f:
     #     api = json.load(f)
     api = json.loads(api_request.content)
-    print(api)
     return render_template('downloads.html', api=api)
 
 
